@@ -3,6 +3,13 @@
 body{
   color: #efefef;
   font-family: 'Open Sans', sans-serif;
+  background: #F2F2F2;
+}
+h1.title{
+  color:#80AA65;
+}
+h1 + span{
+  color: #999;
 }
 .navbar-toggle{
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -32,6 +39,9 @@ body{
 .homepage nav a:hover{
   background: transparent;
   color: #efefef
+}
+.clearboth{
+  clear:both;
 }
 .svgcontainer{
   -moz-box-align: center;
@@ -105,40 +115,44 @@ svg text{
   margin-top:2vh;  
 }
 /*like pinterest waterfall starts here*/
-#waterfall{
+.waterfall{
   /*overflow: hidden;*/
   padding:0;
 }
-#waterfall.min {
+.waterfall.min {
   margin: 0;
 }
-#waterfall li {
+.waterfall li {
   /*position: absolute;*/
   left: 0;
   top: 0;
   opacity: 0;
   z-index: 0;
 }
-#waterfall li:hover {
+.waterfall li:hover {
   /*z-index: 1;*/
 }
-#waterfall li.show {
+.waterfall li.show {
   opacity: 1;
   transition: all 0.8s, top 1s;
 }
-#waterfall li>div {
+.waterfall li>div {
   color: rgba(0, 0, 0, 0.6);
   font-size: 32px;
   border-radius: 3px;
   transition: all 0.5s;
   margin-bottom: 6px;
-  opacity: 0.8
+  opacity: 0.9
 }
-#waterfall li>div:hover {
+.waterfall li>div:hover {
   transition: all 0.5s;
   opacity: 1;
 }
-#waterfall li.min>div {
+.waterfall li>div:hover img{
+  opacity: 0.8;
+  background: #000;
+}
+.waterfall li.min>div {
   margin: 0;
   transform: none;
   border: none;
@@ -146,21 +160,22 @@ svg text{
   box-shadow: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-#waterfall li.min>div:hover {
+.waterfall li.min>div:hover {
   transform: none;
   border: none;
   border-radius: 0;
   box-shadow: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-#waterfall li div img{
+.waterfall li div img{
   border:3px solid #709657;
+  width: 180px;
 }
-#waterfall li div img:hover{
+.waterfall li div img:hover{
   border:3px solid #fff;
   cursor: pointer;
 }
-#waterfall li div .imagecaption{
+.waterfall li div .imagecaption{
   position: absolute;
   left: 3px;
   bottom: 9px;
@@ -175,8 +190,36 @@ svg text{
   display: none;
   font-weight: 600;
 }
-#waterfall li div:hover .imagecaption{
+.waterfall li div:hover .imagecaption{
   display: block;
+}
+.bootcampscontent .imagecaption span{
+  bottom:0;
+} 
+.bootcampscontent .waterfall div strong{
+  display: none;
+  padding: 5px 10px;
+  border: 3px solid #fff;
+  margin: auto;
+  bottom:0;
+  cursor: pointer;
+}
+.bootcampscontent .waterfall div:hover strong{
+  display: block;
+  position: absolute;
+  width: auto;
+  font-size: 12px;
+  top: 0;
+  bottom: 0;
+  height: 33px;
+  color: #fff;
+  left:25%;
+  right: auto;
+  text-align: center;
+}
+.bootcampscontent .waterfall div strong:hover{
+  border-color: #fafafa;
+  color: #fafafa
 }
 /*waterfall ends here*/
 .imagewizard{
@@ -193,6 +236,107 @@ svg text{
 .imagewizard tr td a.disabled{
   opacity: 0.5;
 }
+.mCSB_inside > .mCSB_container{
+  margin-right: 10px;
+}
+.item-to-filter{
+  float: left;
+  margin:0 5px;
+  border-radius: 5px;
+  margin-bottom:10px;
+}
+.item-to-filter img{
+  border-radius: 5px;
+  opacity: 0.7
+}
+.overlay-blue{
+  background-color: #0A719E;
+}
+.overlay-red{
+  background-color: #8C280D;
+}
+.overlay-green{
+  background-color: #167C16;
+}
+.overlay-purple{
+  background-color: #921FA3;
+}
+.overlay-neon{
+  background-color: #6B1E43;
+}
+.overlay-yg{
+  background-color: #9B9B23;
+}
+.tagsort-tags-container span {
+  display: inline-block;
+  border: 2px solid #8f65aa;
+  color: #8f65aa;
+  font-size: 12px;
+  line-height: 10px;
+  padding: 5px 9px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 12px 12px 12px 12px;
+  -moz-border-radius: 12px 12px 12px 12px;
+  -webkit-border-radius: 12px 12px 12px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.tagsort-tags-container span:hover {
+  border: 2px solid #8f65aa;
+  color: #8f65aa;
+  background-color: #8f65aa;
+
+}
+.tagsort-tags-container span.tagsort-active {
+  border: 2px solid #8f65aa;
+  color: #8f65aa;
+  background-color: transparent;
+}
+.howitworks{
+  padding-left:20px;
+  padding-right:20px;
+}
+.howitworks .sectionhead{
+  font-size: 20px;
+  font-weight: 700;
+  color: #5E5E5E;
+  margin: 30px;
+}
+
+.howitworks .sectiondetail{
+  color: #5E5E5E;
+  font-size: 16px;
+  text-align: center;
+}
+.modal-title{
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1300px;
+  }
+}
+
+
+
+
 
 @media only screen and (max-width: 768px){
   #navbar ul.nav{
@@ -214,5 +358,11 @@ svg text{
   }
   .passiononly{
     font-size: 35px;
+  }
+  .homepage > .cfo > .row, .homepage > .cfo > .row > .leftsection, .homepage > .cfo > .row > .rightsection{
+    height: auto;
+  }
+  .homepage > .cfo{
+    height:auto;
   }
 }
