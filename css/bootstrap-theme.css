@@ -1,0 +1,218 @@
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+body{
+  color: #efefef;
+  font-family: 'Open Sans', sans-serif;
+}
+.navbar-toggle{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.navbar-toggle .icon-bar{
+  background: rgba(255, 255, 255, 0.3);
+}
+.homepage > .cfo{
+  height:100vh;
+}
+.homepage > .cfo > .row, .homepage > .cfo > .row > .leftsection, .homepage > .cfo > .row > .rightsection{
+  height: 100%;
+}
+.homepage .leftsection{
+  background: #80AA65;
+}
+.homepage .rightsection{
+  background: #709657;
+}
+.homepage .navbar-nav{
+  padding-top: 25px;
+}
+.homepage nav a{
+  color: #fff;
+  font-weight: 600;
+}
+.homepage nav a:hover{
+  background: transparent;
+  color: #efefef
+}
+.svgcontainer{
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+svg{
+  text-align: : center !important;
+  max-width: 65%;
+}
+svg g{
+ /* width: 400px;
+  height: 435px;*/
+  -moz-box-flex: 0;
+  flex: 0 0 auto;
+}
+.st0{
+  fill:#73995B;
+}
+.st1{
+  fill:#72A551;
+}
+.st2{
+  fill:#80AA65;
+}
+.st3{
+  fill:#62844D;
+}
+.st4{
+  fill:#618E44;
+}
+.st5{
+  fill:#ABCE95;
+}
+.st6{
+  font-family: 'Open Sans', sans-serif;
+}
+.st7{
+  font-size:17.8456;
+}
+.st1:hover, .st2:hover, .st3:hover, .st4:hover, .st5:hover, .st6:hover, .st7:hover{
+  fill:#58823D; cursor: pointer; border:1px solid #efefef;
+}
+svg text{
+  cursor: pointer;
+}
+.lowerpart{
+  justify-content: flex-end;
+  flex-direction: column-reverse;
+  -ms-box-orient: horizontal;
+  margin-top: 15px;
+}
+.discoverpassion, .passiononly{
+  color: #fff;
+  opacity: 0.45;
+  line-height: 42px;
+}
+.discoverpassion{
+  font-size: 33px;
+  font-weight: 300;
+}
+.passiononly{
+  font-size: 45px;
+  font-weight: 600;
+}
+.content{
+  height: 88vh;
+  margin-top:2vh;  
+}
+/*like pinterest waterfall starts here*/
+#waterfall{
+  /*overflow: hidden;*/
+  padding:0;
+}
+#waterfall.min {
+  margin: 0;
+}
+#waterfall li {
+  /*position: absolute;*/
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: 0;
+}
+#waterfall li:hover {
+  /*z-index: 1;*/
+}
+#waterfall li.show {
+  opacity: 1;
+  transition: all 0.8s, top 1s;
+}
+#waterfall li>div {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 32px;
+  border-radius: 3px;
+  transition: all 0.5s;
+  margin-bottom: 6px;
+  opacity: 0.8
+}
+#waterfall li>div:hover {
+  transition: all 0.5s;
+  opacity: 1;
+}
+#waterfall li.min>div {
+  margin: 0;
+  transform: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#waterfall li.min>div:hover {
+  transform: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#waterfall li div img{
+  border:3px solid #709657;
+}
+#waterfall li div img:hover{
+  border:3px solid #fff;
+  cursor: pointer;
+}
+#waterfall li div .imagecaption{
+  position: absolute;
+  left: 3px;
+  bottom: 9px;
+  font-size: 12px;
+  background: rgba(120,120,120,0.5);
+  color: #ffffff;
+  width: calc(100% - 10px);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  display: none;
+  font-weight: 600;
+}
+#waterfall li div:hover .imagecaption{
+  display: block;
+}
+/*waterfall ends here*/
+.imagewizard{
+  margin-top:40px;
+  margin-left: 15px;
+}
+.imagewizard tr td a{
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.imagewizard tr td a.disabled{
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px){
+  #navbar ul.nav{
+    margin-top: 10px;
+    position: absolute;
+  }
+  #navbar{
+    border: 0;
+  }
+  svg {
+    max-width: 90% !important;
+    margin-top: 20px;
+  }
+  .lowerpart{
+    margin-top: 0;
+  }
+  .discoverpassion {
+    font-size: 24px;
+  }
+  .passiononly{
+    font-size: 35px;
+  }
+}
