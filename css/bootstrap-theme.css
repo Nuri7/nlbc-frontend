@@ -24,7 +24,7 @@ h1 + span{
   height:100vh;
 }
 .homepage > .cfo > .row, .homepage > .cfo > .row > .leftsection, .homepage > .cfo > .row > .rightsection{
-  height: 100vh;
+  height: 100%;
 }
 .homepage .leftsection{
   background: #80AA65;
@@ -100,7 +100,7 @@ svg text{
   justify-content: flex-end;
   flex-direction: column-reverse;
   -ms-box-orient: horizontal;
-  margin-top: 15px;
+  /*margin-top: 15px;*/
 }
 .discoverpassion, .passiononly{
   color: #fff;
@@ -116,7 +116,7 @@ svg text{
   font-weight: 600;
 }
 .content{
-  height: 88vh;
+  height: 530px;
   margin-top:2vh;  
 }
 /*like pinterest waterfall starts here*/
