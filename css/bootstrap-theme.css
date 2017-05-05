@@ -28,6 +28,7 @@ h1 + span{
 }
 .homepage .leftsection{
   background: #80AA65;
+  position: fixed;
 }
 .homepage .rightsection{
   background: #709657;
@@ -56,7 +57,8 @@ h1 + span{
 }
 svg{
   text-align: : center !important;
-  max-width: 65%;
+  max-width: 75%;
+  margin-left: 12%;
 }
 svg g{
  /* width: 400px;
