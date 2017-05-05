@@ -3,7 +3,10 @@
 body{
   color: #efefef;
   font-family: 'Open Sans', sans-serif;
-  background: #F2F2F2;
+  /*background: #F2F2F2;*/
+}
+body.homepage{
+  background: #709657;
 }
 h1.title{
   color:#80AA65;
@@ -21,7 +24,7 @@ h1 + span{
   height:100vh;
 }
 .homepage > .cfo > .row, .homepage > .cfo > .row > .leftsection, .homepage > .cfo > .row > .rightsection{
-  height: 100%;
+  height: 100vh;
 }
 .homepage .leftsection{
   background: #80AA65;
@@ -314,13 +317,42 @@ svg text{
 .modal-title{
   color: #333;
 }
-
-
-
-
-
-
-
+.modal-content{
+  border-radius: 0 !important;
+}
+.modal-header, .modal-footer{
+  border: 0;
+  background: #80AA65;
+  text-align: center;
+}
+.modal-footer{
+  background: #EFE2EF;
+}
+.modal-title{
+  color: #fff;
+}
+.modal-footer button, .modal-footer a{
+  background: #80AA65;
+  border-radius: 0;
+  color: #fff;
+  border:0;
+  padding: 9px 40px;
+}
+.modal-footer button:hover, .modal-footer a:hover{
+  background: #80AA65;
+  opacity: 0.8;
+  color: #fff;
+}
+.modal-content{
+  color: #333 !important;
+  text-align: justify;
+  line-height: 22px;
+}
+.modal-header button{
+  color: #fff;
+  text-shadow: 0 0 0;
+  opacity: 0.8;
+}
 
 
 
