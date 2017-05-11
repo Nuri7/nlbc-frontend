@@ -200,6 +200,7 @@ svg text{
 }
 .slick-slide{
   transform: scale(0.85) !important;
+  cursor: pointer;
 }
 .slick-slide.slick-active.slick-center{
   transform: scale(1) !important;
@@ -219,7 +220,7 @@ svg text{
   width: 70px;
   border: 1px solid #efefef;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 25px;
   margin-bottom: 0px;
   float: left;
   margin-right: 10px;
@@ -230,6 +231,7 @@ svg text{
 }
 .courselink{
   opacity: 0.8;
+  color: #fff;
 }
 .courselink:hover .coursebox, .coursebox.boxselected{
   opacity: 1;
