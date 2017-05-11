@@ -20,6 +20,12 @@ h1.title{
 h1 + span{
   color: #999;
 }
+hr{
+  padding: 0;
+  margin:0;
+  margin-top:10px;
+  opacity: 0.2;
+}
 .navbar-toggle{
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -33,15 +39,8 @@ h1 + span{
   height: 100%;
 }
 .homepage .leftsection{
-  /*background: #80AA65;*/
   position: fixed;
 }
-/*.homepage .rightsection{
-  background: #C1C1C1;
-}
-.homepage .navbar-nav{
-  padding-top: 25px;
-}*/
 .homepage nav a{
   color: #fff;
   font-weight: 600;
@@ -67,8 +66,6 @@ svg{
   margin-left: 12%;
 }
 svg g{
- /* width: 400px;
-  height: 435px;*/
   -moz-box-flex: 0;
   flex: 0 0 auto;
 }
@@ -107,7 +104,6 @@ svg text{
   justify-content: flex-end;
   flex-direction: column-reverse;
   -ms-box-orient: horizontal;
-  /*margin-top: 15px;*/
 }
 .discoverpassion, .passiononly{
   color: #fff;
@@ -122,208 +118,20 @@ svg text{
   font-size: 45px;
   font-weight: 600;
 }
-.content{
-  height: 184px;
-}
-.content *{
-  margin-bottom:auto;
-}
-/*like pinterest waterfall starts here*/
-/*.waterfall{*/
-  /*overflow: hidden;*/
- /* padding:0;
-}
-.waterfall.min {
-  margin: 0;
-}
-.waterfall li {
-  /*position: absolute;*/
- /* left: 0;
-  top: 0;
-  opacity: 0;
-  z-index: 0;
-}
-.waterfall li:hover {
-  /*z-index: 1;*/*/
-/*}
-.waterfall li.show {
-  opacity: 1;
-  transition: all 0.8s, top 1s;
-}
-.waterfall li>div {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 32px;
-  border-radius: 3px;
-  transition: all 0.5s;
-  margin-bottom: 6px;
-  opacity: 0.9
-}
-.waterfall li>div:hover {
-  transition: all 0.5s;
-  opacity: 1;
-}
-.waterfall li>div:hover img{
-  opacity: 0.8;
-  background: #000;
-}
-.waterfall li.min>div {
-  margin: 0;
-  transform: none;
-  border: none;
+.btn.btn-primary{
+  background: #5FB4A9 none repeat scroll 0 0;
+  border: 0 none;
   border-radius: 0;
-  box-shadow: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-.waterfall li.min>div:hover {
-  transform: none;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-.waterfall li div img{
-  border:3px solid #709657;
-  width: 180px;
-}
-.waterfall li div img:hover{
-  border:3px solid #fff;
-  cursor: pointer;
-}
-.waterfall li div .imagecaption{
-  position: absolute;
-  left: 3px;
-  bottom: 9px;
-  font-size: 12px;
-  background: rgba(120,120,120,0.5);
-  color: #ffffff;
-  width: calc(100% - 10px);
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  display: none;
-  font-weight: 600;
-}
-.waterfall li div:hover .imagecaption{
-  display: block;
-}
-.bootcampscontent .imagecaption span{
-  bottom:0;
-} 
-.bootcampscontent .waterfall div strong{
-  display: none;
+  color: #fff;
   padding: 5px 10px;
-  border: 3px solid #fff;
-  margin: auto;
-  bottom:0;
-  cursor: pointer;
-}
-.bootcampscontent .waterfall div:hover strong{
-  display: block;
-  position: absolute;
-  width: auto;
   font-size: 12px;
-  top: 0;
-  bottom: 0;
-  height: 33px;
-  color: #fff;
-  left:25%;
-  right: auto;
-  text-align: center;
-}
-.bootcampscontent .waterfall div strong:hover{
-  border-color: #fafafa;
-  color: #fafafa
-}*/
-/*waterfall ends here*/
-.imagewizard{
-  margin-top: 40px;
-  margin-left: 15px;
-}
-.imagewizard tr td a{
-  text-decoration: none;
-  color: #fff;
-  margin-right: 20px;
   font-weight: 600;
-  font-size: 14px;
 }
-.imagewizard tr td a.disabled{
-  opacity: 0.5;
-}
-.mCSB_inside > .mCSB_container{
-  margin-right: 10px;
-}
-.item-to-filter{
-  float: left;
-  margin:0 5px;
-  border-radius: 5px;
-  margin-bottom:10px;
-}
-.item-to-filter img{
-  border-radius: 5px;
-  opacity: 0.7
-}
-.overlay-blue{
-  background-color: #0A719E;
-}
-.overlay-red{
-  background-color: #8C280D;
-}
-.overlay-green{
-  background-color: #167C16;
-}
-.overlay-purple{
-  background-color: #921FA3;
-}
-.overlay-neon{
-  background-color: #6B1E43;
-}
-.overlay-yg{
-  background-color: #9B9B23;
-}
-.tagsort-tags-container span {
-  display: inline-block;
-  border: 2px solid #8f65aa;
-  color: #8f65aa;
-  font-size: 12px;
-  line-height: 10px;
-  padding: 5px 9px;
-  margin: 5px;
-  cursor: pointer;
-  border-radius: 12px 12px 12px 12px;
-  -moz-border-radius: 12px 12px 12px 12px;
-  -webkit-border-radius: 12px 12px 12px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.tagsort-tags-container span:hover {
-  border: 2px solid #8f65aa;
-  color: #8f65aa;
-  background-color: #8f65aa;
-
-}
-.tagsort-tags-container span.tagsort-active {
-  border: 2px solid #8f65aa;
-  color: #8f65aa;
-  background-color: transparent;
-}
-.howitworks{
-  padding-left:20px;
-  padding-right:20px;
-}
-.howitworks .sectionhead{
-  font-size: 20px;
-  font-weight: 700;
-  color: #5E5E5E;
-  margin: 30px;
-}
-
-.howitworks .sectiondetail{
-  color: #5E5E5E;
-  font-size: 16px;
-  text-align: center;
+.center-button .btn.btn-primary{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 155px;
 }
 .modal-title{
   color: #333;
@@ -333,24 +141,24 @@ svg text{
 }
 .modal-header, .modal-footer{
   border: 0;
-  background: #d38c6c;
+  background: #5fb4a9;
   text-align: center;
 }
 .modal-footer{
-  background: #EFE2EF;
+  background: #e4f7f4;
 }
 .modal-title{
   color: #fff;
 }
 .modal-footer button, .modal-footer a{
-  background: #d38c6c;
+  background: #5fb4a9;
   border-radius: 0;
   color: #fff;
   border:0;
   padding: 9px 40px;
 }
 .modal-footer button:hover, .modal-footer a:hover{
-  background: #d38c6c;
+  background: #5fb4a9;
   opacity: 0.8;
   color: #fff;
 }
@@ -364,123 +172,95 @@ svg text{
   text-shadow: 0 0 0;
   opacity: 0.8;
 }
-.threerow li{
-  float: left;
-}
-.content ul{
-  padding-left: 45px;
-  padding-right: 30px;
-}
-.content li{
-  float: left;
-  width: 187px
-}
-.content li img{
-  max-width: 180px;
-  border: 3px solid #
-}
 .sectiontitle{
-  margin-top: 20px;
-  padding-left: 45px;
+  margin-top: 5px;
+  padding-left: 90px;
   font-weight: 600;
+  color: #fff;
 }
-.carousel-control{
-  background: transparent !important;
-  width: 1%;
-  padding-top: 60px;
+.slick-list{
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
-.carousel-control img{
-  width: 30px;
-}
-.carousel-control.right{
-  right: 20px !important;
+.center div{
+  position: relative;
 }
 .imagecaption{
-  position: absolute;
-  bottom: 0px;
-  font-size: 12px;
-  background: rgba(120,120,120,0.6);
-  color: #ffffff;
-  width: 97%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  display: block;
-  font-weight: 600;
-}
-.boxmodal{
-  position: relative;
-  margin:3px;
-  width: 186px;
-}
-.boxmodal:hover{
-  margin:0px;
-  border:3px solid rgba(250,250,250,0.3);
-  cursor: pointer;
-}
-.boxmodal strong{
-  display: none;
-  padding: 5px 10px;
-  border: 3px solid #fff;
-  margin: auto;
-  bottom:0;
-  cursor: pointer;
-}
-.boxmodal:hover strong{
-  display: block;
-  position: absolute;
-  width: auto;
-  font-size: 12px;
-  top: 0;
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
   bottom: 0;
-  height: 33px;
+  font-size: 13px;
+  font-weight: 600;
+  left: 0;
+  max-width: 170px;
+  padding: 2px 5px;
+  position: absolute;
+  white-space: pre-wrap;
+}
+.slick-slide{
+  transform: scale(0.85) !important;
+}
+.slick-slide.slick-active.slick-center{
+  transform: scale(1) !important;
+}
+.slick-arrow{
+  opacity: 0.5;
+}
+.slick-arrow:hover{
+  opacity: 1;
+}
+.center a{
+  text-decoration: none;
   color: #fff;
-  left:25%;
-  right: auto;
+}
+.coursebox{
+  height: 70px;
+  width: 70px;
+  border: 1px solid #efefef;
   text-align: center;
-  background: rgba(0,0,0,0.35);
-}
-.smallli{
-  width: 100px !important;
-  height: 100px !important;
+  padding-top: 20px;
+  margin-bottom: 0px;
+  float: left;
   margin-right: 10px;
+  margin-top:15px;
+  margin-left:1px;
+  position: relative;
+  transition: visibility 0s, opacity 5s linear;
 }
-.smallli div{
-  height: 100px;
+.courselink{
+  opacity: 0.8;
+}
+.courselink:hover .coursebox, .coursebox.boxselected{
+  opacity: 1;
+  border:2px solid #fff;
+}
+.hoverevent{
+  display: none;
+  text-align: center; 
+}
+.courselink:hover .hoverevent{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(255,255,255,0.7);
+  top:0;
+  padding:20px 5px;
+}
+.hoverevent table{
   width: 100%;
 }
-.smallli .boxmodal{
-  background: #9CAA99; 
+.hoverevent i.fa{
+  background: #333 none repeat scroll 0 0;
+  border-radius: 20px;
+  color: #fff;
+  height: 25px;
+  line-height: 23px;
+  text-align: center;
+  width: 25px;
 }
-.smallli .boxmodal:hover{
-  opacity: 0.7;
-  padding:3px;
-  border:0;
-  margin:3px;
-  padding-left: 0px !important;
-}
-.smallli img{
-  width: 90px !important;
-}
-.smallli .imagecaption{
-  background: transparent;
-  padding-bottom: 7px;
-  padding-left: 7px;
-}
-
-#challengesslide .carousel-control{
-  padding-top: 20px !important;
-}
-
-#challengesslide .carousel-control img{
-  width: 20px;
-}
-
-.smallcontent{
-  height: 105px;
-}
-
 
 @media (min-width: 1200px) {
   .container {

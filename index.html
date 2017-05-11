@@ -17,11 +17,16 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <!-- <script src="js/newWaterfall.js"></script> -->
-    <script src="js/jquery.mCustomScrollbar.min.js"></script>
-    <script src="js/tagsort.js"></script>
+    <!-- <script src="js/jquery.mCustomScrollbar.min.js"></script> -->
+    <!-- <script src="js/tagsort.js"></script> -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
     <!-- <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet"> -->
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -29,6 +34,35 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.center').slick({
+                centerMode: true,
+                centerPadding: '20px',
+                slidesToShow: 3,
+                nextArrow: '<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Previous" role="button" style="display: block;"><img src="images/tright.png" alt="left"></button>',
+                prevArrow: '<button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;"><img src="images/tleft.png" alt="right"></button>',
+                responsive: [{
+                  breakpoint: 768,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                  }
+                },{
+                  breakpoint: 480,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                  }
+                }
+              ]}
+            );
+        });
+    </script>
 </head>
 <body class="homepage">
     <div class="container-fluid cfo">
@@ -137,314 +171,212 @@
             </div>
             <div class="col-md-6 col-md-offset-6 col-sm-offset-6 col-sm-12 rightsection">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="sectiontitle">PASSION</div>
-                        <div class="content">
-                            <div id="bootcampslide" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <div data-toggle="modal" data-target="#myModal" class="boxmodal">
-                                                    <img src="images/pro.jpg" />
-                                                    <span class="imagecaption">Coding</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div data-toggle="modal" data-target="#myModal" class="boxmodal">
-                                                    <img src="images/dance.jpg" />
-                                                    <span class="imagecaption">Dancing</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div data-toggle="modal" data-target="#myModal" class="boxmodal">
-                                                    <img src="images/sports.jpg" />
-                                                    <span class="imagecaption">Sports</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="item">
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <div data-toggle="modal" data-target="#myModal" class="boxmodal">
-                                                    <img src="images/smile.jpg" />
-                                                    <span class="imagecaption">Coding</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div data-toggle="modal" data-target="#myModal" class="boxmodal">
-                                                    <img src="images/pexels-photo-240709.jpg" />
-                                                    <span class="imagecaption">Dancing</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
+                    <div class="col-md-12 center-button">
+                        <div class="passionsection">
+                            <!-- <div class="sectiontitle">PASSION</div> -->
+                            <div class="center">
+                                <div>
+                                    <img src="images/pro.jpg" />
+                                    <span class="imagecaption">Coding</span>
                                 </div>
-                                 <a class="left carousel-control" href="#bootcampslide" data-slide="prev">
-                                    <img src="images/indicator-left.png" alt="left" />
-                                    <span class="sr-only">Previous</span>
-                                  </a>
-                                  <a class="right carousel-control" href="#bootcampslide" data-slide="next">
-                                    <img src="images/indicator-right.png" alt="right" />                                    
-                                    <span class="sr-only">Next</span>
-                                  </a>
+                                <div>
+                                    <img src="images/dance.jpg" />
+                                    <span class="imagecaption">Dancing</span>
+                                </div>
+                                <div>
+                                    <img src="images/sports.jpg" />
+                                    <span class="imagecaption">Sports</span>
+                                </div>
+                                <div>
+                                    <img src="images/dance.jpg" />
+                                    <span class="imagecaption">Dancing</span>
+                                </div>
                             </div>
-                            <!-- Modal -->
-                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="myModalLabel">Passion detail</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-3 col-md-offset-1">
-                                                    <img src="images/sports.jpg" alt="Sports" />
-                                                </div>
-                                                <div class="col-md-6 col-md-offset-1">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <button class="btn btn-primary">Select this <STRONG>PASSION</STRONG></button>
+                        </div><hr />
+                        <div class="bootcampssection">
+                            <!-- <div class="sectiontitle">BOOTCAMPS</div> -->
+                            <div class="center">
+                                <div>
+                                    <a href="#" data-toggle="modal" data-target="#myModal">
+                                        <img src="images/programming-java.jpg" />
+                                        <span class="imagecaption">QA-Java and BDD</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" data-toggle="modal" data-target="#myModal">
+                                        <img src="images/pexels-photo-270557.jpg" />
+                                        <span class="imagecaption">QA-protractor</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" data-toggle="modal" data-target="#myModal">
+                                        <img src="images/pro.jpg" />
+                                        <span class="imagecaption">Programming Fundamentals</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" data-toggle="modal" data-target="#myModal">
+                                        <img src="images/pexels-photo-270557.jpg" />
+                                        <span class="imagecaption">QA-protractor</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary"><strong>SUBSCRIBE</strong></button>
+                        </div><hr />
+                        <div class="challengessection">
+                            <div class="sectiontitle">CHALLENGES</div>
+                            <div class="row text-center">
+                                <div class="col-md-9 col-md-offset-2">
+                                    <div class="row">
+                                        <a href="javascript:" class="courselink">
+                                            <div class="coursebox">5k
+                                                <div class="hoverevent">
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="fa fa-check"></i>
+                                                            </td>
+                                                            <td>
+                                                                <i class="fa fa-expand" data-toggle="modal" data-target="#myModal"></i>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sectiontitle">BOOTCAMPS</div>
-                        <div class="content">
-                            <div id="passionslide" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <div class="boxmodal">
-                                                    <img src="images/programming-java.jpg" />
-                                                    <strong>Subscribe</strong>
-                                                    <span class="imagecaption">QA-Java and BDD</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="boxmodal">
-                                                    <img src="images/pexels-photo-270557.jpg" />
-                                                    <strong>Subscribe</strong>
-                                                    <span class="imagecaption">QA-protractor</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="boxmodal">
-                                                    <img src="images/pro.jpg" />
-                                                    <strong>Subscribe</strong>
-                                                    <span class="imagecaption">Programming Fundamentals</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="item">
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <div class="boxmodal">
-                                                    <img src="images/dance.jpg" />
-                                                    <strong>Subscribe</strong>
-                                                    <span class="imagecaption">Salsa</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="boxmodal">
-                                                    <img src="images/bachata.jpg" />
-                                                    <strong>Subscribe</strong>
-                                                    <span class="imagecaption">Bachata</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="boxmodal">
-                                                    <img src="images/kizomba.jpg" />
-                                                    <strong>Subscribe</strong>
-                                                    <span class="imagecaption">Kizomba</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="item">
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <div class="boxmodal">
-                                                    <img src="images/boxing.jpg" />
-                                                    <strong>Subscribe</strong>
-                                                    <span class="imagecaption">Boxing</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="boxmodal">
-                                                    <img src="images/3.jpg" />
-                                                    <strong>Subscribe</strong>
-                                                    <span class="imagecaption">Photography</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="boxmodal">
-                                                    <img src="images/video.png" />
-                                                    <strong>Subscribe</strong>
-                                                    <span class="imagecaption">Videography</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="item">
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <div class="boxmodal">
-                                                    <img src="images/acting.jpg" />
-                                                    <strong>Subscribe</strong>
-                                                    <span class="imagecaption">Acting</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="boxmodal">
-                                                    <img src="images/massage.jpg" />
-                                                    <strong>Subscribe</strong>
-                                                    <span class="imagecaption">Massage</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="boxmodal">
-                                                    <img src="images/model.jpg" />
-                                                    <strong>Subscribe</strong>
-                                                    <span class="imagecaption">Modeling</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="item">
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <div class="boxmodal">
-                                                    <img src="images/nutrition.jpg" />
-                                                    <strong>Subscribe</strong>
-                                                    <span class="imagecaption">Nutrition</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="boxmodal">
-                                                    <img src="images/med.jpg" />
-                                                    <strong>Subscribe</strong>
-                                                    <span class="imagecaption">Yoga</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                 <a class="left carousel-control" href="#passionslide" data-slide="prev">
-                                    <img src="images/indicator-left.png" alt="left" />
-                                    <span class="sr-only">Previous</span>
-                                  </a>
-                                  <a class="right carousel-control" href="#passionslide" data-slide="next">
-                                    <img src="images/indicator-right.png" alt="right" />                                    
-                                    <span class="sr-only">Next</span>
-                                  </a>
-                            </div>
-                            <!-- Modal -->
-                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="myModalLabel">Passion detail</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-3 col-md-offset-1">
-                                                    <img src="images/sports.jpg" alt="Sports" />
-                                                </div>
-                                                <div class="col-md-6 col-md-offset-1">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </a>
+                                        <a href="javascript:" class="courselink">
+                                            <div class="coursebox boxselected">10k<div class="hoverevent">
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="fa fa-check"></i>
+                                                            </td>
+                                                            <td>
+                                                                <i class="fa fa-expand" data-toggle="modal" data-target="#myModal"></i>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                                        </div>
+                                        </a>
+                                        <a href="javascript:" class="courselink">
+                                            <div class="coursebox">5k
+                                                <div class="hoverevent">
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="fa fa-check"></i>
+                                                            </td>
+                                                            <td>
+                                                                <i class="fa fa-expand" data-toggle="modal" data-target="#myModal"></i>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:" class="courselink">
+                                            <div class="coursebox">10k
+                                                <div class="hoverevent">
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="fa fa-check"></i>
+                                                            </td>
+                                                            <td>
+                                                                <i class="fa fa-expand" data-toggle="modal" data-target="#myModal"></i>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:" class="courselink">
+                                            <div class="coursebox">5k
+                                                <div class="hoverevent">
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="fa fa-check"></i>
+                                                            </td>
+                                                            <td>
+                                                                <i class="fa fa-expand" data-toggle="modal" data-target="#myModal"></i>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:" class="courselink">
+                                            <div class="coursebox">10k
+                                                <div class="hoverevent">
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="fa fa-check"></i>
+                                                            </td>
+                                                            <td>
+                                                                <i class="fa fa-expand" data-toggle="modal" data-target="#myModal"></i>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
+                            </div><br />
+                            <button class="btn btn-primary">Request 1:1 Teaching</button>
                         </div>
-                        <div class="sectiontitle">CHALLANGES</div>
-                        <div class="content smallcontent">
-                            <div id="challengesslide" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <ul class="list-unstyled">
-                                            <li class="smallli">
-                                                <div data-toggle="modal" data-target="#myModal" class="boxmodal">
-                                                    <span class="imagecaption">Challenge 1</span>
-                                                </div>
-                                            </li>
-                                            <li class="smallli">
-                                                <div data-toggle="modal" data-target="#myModal" class="boxmodal">
-                                                    <span class="imagecaption">Challenge 2</span>
-                                                </div>
-                                            </li>
-                                            <li class="smallli">
-                                                <div data-toggle="modal" data-target="#myModal" class="boxmodal">
-                                                    <span class="imagecaption">Challenge 3</span>
-                                                </div>
-                                            </li>
-                                            <li class="smallli">
-                                                <div data-toggle="modal" data-target="#myModal" class="boxmodal">
-                                                    <span class="imagecaption">Challenge 4</span>
-                                                </div>
-                                            </li>
-                                            <li class="smallli">
-                                                <div data-toggle="modal" data-target="#myModal" class="boxmodal">
-                                                    <span class="imagecaption">Challenge 5</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="item">
-                                        <ul class="list-unstyled">
-                                            <li class="smallli">
-                                                <div data-toggle="modal" data-target="#myModal" class="boxmodal">
-                                                    <span class="imagecaption">Challenge 6</span>
-                                                </div>
-                                            </li>
-                                            <li class="smallli">
-                                                <div data-toggle="modal" data-target="#myModal" class="boxmodal">
-                                                    <span class="imagecaption">Challenge 7</span>
-                                                </div>
-                                            </li>
-                                            <li class="smallli">
-                                                <div data-toggle="modal" data-target="#myModal" class="boxmodal">
-                                                    <span class="imagecaption">Challenge 8</span>
-                                                </div>
-                                            </li>
-                                            <li class="smallli">
-                                                <div data-toggle="modal" data-target="#myModal" class="boxmodal">
-                                                    <span class="imagecaption">Challenge 9</span>
-                                                </div>
-                                            </li>
-                                            <li class="smallli">
-                                                <div data-toggle="modal" data-target="#myModal" class="boxmodal">
-                                                    <span class="imagecaption">Challenge 10</span>
-                                                </div>
-                                            </li>
-                                        </ul>
+                    </div>
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Bootocamp details</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-3 col-md-offset-1">
+                                            <img src="images/sports.jpg" alt="Sports" />
+                                        </div>
+                                        <div class="col-md-6 col-md-offset-1">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            <table class="table">
+                                                <tr>
+                                                    <td>Location</td>
+                                                    <td> : </td>
+                                                    <td>
+                                                        <select>
+                                                            <option>San Dieage</option>
+                                                            <option>Paris</option>
+                                                            <option>Sydney</option>
+                                                            <option>Kathmandu</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Agenda</td>
+                                                    <td> : </td>
+                                                    <td>
+                                                        <select>
+                                                            <option>2017 May 20</option>
+                                                            <option>2017 May 30</option>
+                                                            <option>2017 June 10</option>
+                                                            <option>2017 June 20</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
-                                 <a class="left carousel-control" href="#challengesslide" data-slide="prev">
-                                    <img src="images/indicator-left.png" alt="left" />
-                                    <span class="sr-only">Previous</span>
-                                  </a>
-                                  <a class="right carousel-control" href="#challengesslide" data-slide="next">
-                                    <img src="images/indicator-right.png" alt="right" />                                    
-                                    <span class="sr-only">Next</span>
-                                  </a>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Subscribe</button>
+                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
                             </div>
                         </div>
                     </div>
