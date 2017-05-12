@@ -179,8 +179,8 @@ svg text{
   color: #fff;
 }
 .slick-list{
-  padding-top: 8px !important;
-  padding-bottom: 8px !important;
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
@@ -199,10 +199,12 @@ svg text{
   white-space: pre-wrap;
 }
 .slick-slide{
-  transform: scale(0.85) !important;
+  -webkit-transform: scale(0.75, 0.75) !important;
+  transform: scale(0.75) !important;
   cursor: pointer;
 }
 .slick-slide.slick-active.slick-center{
+  -webkit-transform: scale(1, 1) !important;
   transform: scale(1) !important;
 }
 .slick-arrow{
@@ -263,7 +265,9 @@ svg text{
   text-align: center;
   width: 25px;
 }
-
+.smalltop{
+	margin-top:8px;
+}
 @media (min-width: 1200px) {
   .container {
     width: 1300px;
