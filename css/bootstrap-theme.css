@@ -303,4 +303,25 @@ svg text{
   .homepage > .cfo{
     height:auto;
   }
+  .sectiontitle{
+  	padding-left: 0;
+  	text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px){
+	.challengessection ul li{
+		text-align: center;
+		width: 80%;
+		margin: auto;
+	}
+	.rightsection{
+		margin-top: 100px;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	.discoverpassion{
+		line-height: 18px;
+	}
 }
