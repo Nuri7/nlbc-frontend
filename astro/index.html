@@ -1,0 +1,1380 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- <link rel="shortcut icon" href="http://localhost/wordpress/wp-content/themes/astro/images/favicon.ico"> -->
+    <title>NLBC</title>
+    <script type="text/javascript">
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                // "concatemoji": "js/wp-emoji-release.min.js?ver=4.7.4"
+            }
+        };
+        ! function(a, b, c) {
+            function d(a) {
+                var b, c, d, e, f = String.fromCharCode;
+                if (!k || !k.fillText) return !1;
+                switch (k.clearRect(0, 0, j.width, j.height), k.textBaseline = "top", k.font = "600 32px Arial", a) {
+                    case "flag":
+                        return k.fillText(f(55356, 56826, 55356, 56819), 0, 0), !(j.toDataURL().length < 3e3) && (k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 65039, 8205, 55356, 57096), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 55356, 57096), 0, 0), c = j.toDataURL(), b !== c);
+                    case "emoji4":
+                        return k.fillText(f(55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0), d = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55357, 56425, 55356, 57341, 55357, 56507), 0, 0), e = j.toDataURL(), d !== e
+                }
+                return !1
+            }
+
+            function e(a) {
+                var c = b.createElement("script");
+                c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+            }
+            var f, g, h, i, j = b.createElement("canvas"),
+                k = j.getContext && j.getContext("2d");
+            for (i = Array("flag", "emoji4"), c.supports = {
+                    everything: !0,
+                    everythingExceptFlag: !0
+                }, h = 0; h < i.length; h++) c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]);
+            c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function() {
+                c.DOMReady = !0
+            }, c.supports.everything || (g = function() {
+                c.readyCallback()
+            }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function() {
+                "complete" === b.readyState && c.readyCallback()
+            })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji)))
+        }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='astro_custom_style-css' href='css/main.css?ver=4.6' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/video-js.min.css' type='text/css' media='all' />
+    <style id='astro_custom_style-inline-css' type='text/css'>
+        #alt_logo_holder {
+            margin-top: 20px;
+        }
+        body,
+        .search-query,
+        .regular_font,
+        input,
+        textarea {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .vc_tta-accordion .vc_tta-panel-heading,
+        .vc_tta-container .vc_tta-tabs-list a,
+        #calendar_wrap caption,
+        .comments_slider .comment-link,
+        .comments_slider .comment-author,
+        .wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header,
+        .wpb_tabs_nav a,
+        .theme_button,
+        .theme_button_inverted,
+        .theme_button input,
+        .theme_button_inverted input,
+        .prk_composer_title,
+        .wpb_button,
+        .wpb_heading,
+        .wpb_wrapper h2,
+        .header_font,
+        .nav,
+        #nav_footer,
+        .sf-menu,
+        .day,
+        .month,
+        .theme_tags,
+        .homepage-header,
+        .sidebar_bubble,
+        .related_single_title,
+        .widget-title,
+        .masonr_title,
+        .masonr_date,
+        .entry_title_single,
+        .search_rs_ttl,
+        .headings_top,
+        .post_meta_single .after_icon,
+        .post_meta_single .bf_icon,
+        .prevnext_single .after_icon,
+        .prevnext_single .bf_icon,
+        header_font,
+        .pir_divider_cats,
+        .shortcode-title,
+        #single_post_teaser,
+        #nav-main.resp_mode li>a,
+        #single_portfolio_meta .single_heading,
+        .type-post .prevnext_single,
+        #single_page_teaser,
+        .vc_cta3-content-header,
+        #pir_categories {
+            font-family: 'PT Sans', sans-serif;
+        }
+
+        .prk_inner_block {
+            max-width: 1280px;
+        }
+
+        body,
+        #contact_info,
+        #project_info {
+            background-color: #FFFFFF;
+        }
+
+        .member_colored_block_in,
+        .grid_colored_block,
+        .related_fader_grid {
+            background-color: #000000;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .astro_nav_right #contact_info.opened_contact {
+            right: 444px;
+        }
+
+        #contact_info {
+            max-width: 444px;
+        }
+
+        #left_bar_wrapper {
+            padding-left: 43px;
+        }
+
+        #menu_hover_trigger,
+        #left_bar_wrapper,
+        #nav-collapsed-icon,
+        #prk_responsive_menu {
+            width: 104px;
+        }
+
+        #alt_logo_holder {
+            width: 94px;
+        }
+
+        #prk_ferro_left {
+            left: 104px;
+        }
+
+        #left_bar_wrapper {
+            left: -104px;
+        }
+
+        .astro_nav_right #prk_ferro_left {
+            right: 104px;
+            left: inherit;
+        }
+
+        .astro_nav_right #left_bar_wrapper {
+            right: -104px;
+            left: inherit;
+        }
+
+        .astro_landing_page #prk_responsive_menu {
+            left: -104px;
+        }
+
+        #astro_featured_header {
+            padding-left: 104px;
+            margin-left: -104px;
+        }
+
+        .astro_nav_right #astro_featured_header {
+            padding-right: 104px;
+            margin-right: -104px;
+            padding-left: inherit;
+            margin-left: inherit;
+        }
+
+        .astro_nav_right #contact-image-fth.fullscreen #contact-image-cover {
+            margin-left: 104px;
+        }
+
+        .astro_nav_right #contact-image-fth.fullscreen #contact-image-cover {
+            margin-left: inherit;
+            margin-right: 104px;
+        }
+
+        #nav-collapsed-icon {
+            padding-left: 30px;
+        }
+
+        .astro_nav_right #nav-collapsed-icon {
+            padding-right: 30px;
+        }
+
+        .always_menu .forced_closing #prk_ajax_container,
+        #prk_ajax_container {
+            margin: 0px 0px 0px 104px;
+        }
+
+        .astro_nav_right.always_menu .forced_closing #prk_ajax_container,
+        .astro_nav_right #prk_ajax_container {
+            margin: 0px 104px 0px 0px;
+        }
+
+        .always_menu #st-container {
+            width: 220px;
+        }
+
+        .always_menu #prk_responsive_menu {
+            left: 220px;
+        }
+
+        .always_menu #prk_ajax_container {
+            margin-left: 324px;
+        }
+
+        .always_menu.astro_nav_right #prk_ajax_container {
+            margin: 0px 324px 0px 0px;
+        }
+
+        .always_menu.astro_nav_right #prk_responsive_menu {
+            right: 220px;
+            left: inherit;
+        }
+
+        .grid_single_title>a.fade_anchor {
+            opacity: 0;
+            filter: alpha(opacity=0);
+            margin-left: 10px;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+
+        .as-panel .titled_block .inner_skills {
+            opacity: 0;
+            filter: alpha(opacity=0);
+            margin-left: 10px;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+            -moz-transition-delay: 0.2s;
+            -webkit-transition-delay: 0.2s;
+            -o-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+        }
+
+        .as-panel .prk_heart_carousel {
+            opacity: 0;
+            filter: alpha(opacity=0);
+            margin-right: 10px;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+            -moz-transition-delay: 0.2s;
+            -webkit-transition-delay: 0.2s;
+            -o-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+        }
+
+        #single_blog_content {
+            opacity: 0;
+            filter: alpha(opacity=0);
+            margin-top: 30px;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+            -moz-transition-delay: 0.1s;
+            -webkit-transition-delay: 0.1s;
+            -o-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+        }
+
+        #sidebar.on_single {
+            opacity: 0;
+            filter: alpha(opacity=0);
+            margin-top: 30px;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+            -moz-transition-delay: 0.3s;
+            -webkit-transition-delay: 0.3s;
+            -o-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+        }
+
+        #prk_full_size_single {
+            opacity: 0;
+            filter: alpha(opacity=0);
+            margin-top: 30px;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+            -moz-transition-delay: 0.1s;
+            -webkit-transition-delay: 0.1s;
+            -o-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+        }
+
+        #full-entry-right {
+            z-index: 1;
+            padding-top: 15px;
+            width: 285px;
+            position: absolute;
+            right: 20px;
+
+            opacity: 0;
+            filter: alpha(opacity=0);
+            top: 30px;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+            -moz-transition-delay: 0.3s;
+            -webkit-transition-delay: 0.3s;
+            -o-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+        }
+
+        .naver_back,
+        .sf-menu li a,
+        .sf-menu li a:hover,
+        .prk_gallery_title {
+            color: #000000;
+        }
+
+        a,
+        a:hover,
+        #top_widgets h3,
+        .home_blog_date_text h4,
+        .contact_error,
+        #top_widgets .email a:hover,
+        h3 a:hover,
+        .entry-title a:hover,
+        .blog_meta>p>a:hover,
+        #blog_entries_masonr .blog_meta a:hover,
+        #single_portfolio_meta .comments-link:hover,
+        .blog_meta a.comments-link:hover,
+        .blog_meta a:hover,
+        #mini_menu a:hover,
+        .post_meta_single a:hover,
+        .entry_title_single .masonr_date>span,
+        .post_meta_single #previous_button:hover .after_icon,
+        .post_meta_single #next_button:hover .bf_icon,
+        #nav-main.resp_mode li>a:hover,
+        .a_colored a:hover,
+        .recentposts_ul_shortcode .blog_meta a:hover,
+        .classic_meta .post-categories li a:hover,
+        .headings_top,
+        .tiny_bullet,
+        .not_zero_color {
+            color: #e74c3c;
+        }
+
+        #calendar_wrap caption,
+        .scode_categories li>a,
+        #pir_categories li>a,
+        .wpb_heading,
+        .vc_cta3-content-header,
+        .zero_color,
+        .zero_color a,
+        .header_font.zero_color a,
+        a.zero_color,
+        .zero_color a:hover,
+        a.zero_color:hover {
+            color: #000000;
+        }
+
+        #after_widgets,
+        #footer_in .default_color a,
+        #footer_in {
+            color: #8F8F8F;
+        }
+
+        #footer_in .not_zero_color,
+        #footer_in a,
+        #footer_in .theme_button a,
+        .footer .widget-title {
+            color: #111111;
+        }
+
+        #footer_in .theme_button_inverted a:hover,
+        #footer_in .theme_button a:hover {
+            color: #111111 !important;
+        }
+
+        body,
+        .prk_tags_ul a,
+        .blog_meta>p>a,
+        .flexslider .headings_body,
+        .shortcode_slider .headings_body,
+        .padded_text a,
+        .post_meta_single .after_icon,
+        .post_meta_single .bf_icon,
+        .post_meta_single a,
+        .blog_meta a,
+        .default_color,
+        .default_color a,
+        .default_color a:hover,
+        a.default_color,
+        a.default_color:hover,
+        .titled_block .grid_single_title span a,
+        #no_more .prk_titlify,
+        .single_entry_tags a,
+        .contact_address_right_single a,
+        #astro_search,
+        .masonr_read_more a,
+        .blog_meta a,
+        #nav-main.resp_mode li>a,
+        a.smoothed_a,
+        .vc_tta-container .vc_tta-tabs-list a,
+        .tagcloud a,
+        .pirenko_highlighted,
+        a.alt_smoothed_a,
+        .prk_minimal_button a,
+        .prk_minimal_button input,
+        select {
+            color: #666666;
+        }
+
+         ::-webkit-input-placeholder {
+            color: #666666;
+        }
+
+         :-moz-placeholder {
+            /* Firefox 18- */
+            color: #666666;
+        }
+
+         ::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #666666;
+        }
+
+         :-ms-input-placeholder {
+            color: #666666;
+        }
+
+        .sf-menu li li.before_nav_icon:before,
+        .entry-title a,
+        a.lk_text,
+        .sidebar_bubble,
+        a.lk_text:hover,
+        .theme_tags li a,
+        .theme_tags li a:hover,
+        .related_post a,
+        .prk_folio_control,
+        .prk_price_featured,
+        .menu_bk_color {
+            color: #f5f5f5;
+        }
+
+        #contact-form textarea {
+            color: #666666;
+        }
+
+        .flex-prev,
+        .flex-next,
+        a.flex-prev:hover,
+        a.flex-next:hover,
+        #previous_button a,
+        #previous_button a:hover,
+        #next_button a,
+        #next_button a:hover,
+        .mini_arrow_up,
+        .prevnext_single a,
+        .bx-controls-direction a,
+        .bx-controls-direction a:hover,
+        #back_portfolio a,
+        .prk_price_table.featured,
+        .prk_price_table.featured .zero_color,
+        .prk_price_table.featured .default_color,
+        .site_background_colored a,
+        a.site_background_colored,
+        .site_background_colored,
+        .prk_blockquote.colored_background .in_quote,
+        .prk_heart_masonry,
+        .prk_button_like,
+        .body_bk_color,
+        .blog_date,
+        #prk_gallery_control_right,
+        #prk_gallery_control_left,
+        #no_more,
+        .prk_sharrre_button a,
+        #footer_in .theme_button input,
+        .theme_button input,
+        .theme_button a,
+        .theme_button a:hover,
+        .theme_button button,
+        #pages_static_nav a,
+        .member_function,
+        .theme_button_inverted a,
+        .theme_button_inverted a:hover,
+        #tp_side_close_icon .icon-up-open:before,
+        #tp_side_icon .icon-down-open:before,
+        .prk_progress_bar,
+        .vc_tta-accordion .vc_tta-panel-heading a,
+        .vc_tta-container .vc_tta-tabs-list li.vc_active a,
+        .vc_tta-container .vc_tta-tabs-list li:hover a {
+            color: #FFFFFF;
+        }
+
+        .comment_floated:after,
+        .flex-control-nav li a {
+            background-color: #FFFFFF;
+        }
+
+        .flex-control-nav li a {
+            -webkit-box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.75);
+            -mobox-shadow: 0px 0px 1px rgba(255, 255, 255, 0.75);
+            box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.75);
+        }
+
+        .sf-menu li.active>a {
+            color: #6d6d6d;
+        }
+
+        .sf-menu li.active {
+            background-color: #efefef;
+        }
+
+        .prk_menu_block,
+        .flexslider .theme_button_inverted a,
+        .navigation-previous,
+        .navigation-next,
+        .flex-direction-nav li a.flex-next,
+        .flex-direction-nav li a.flex-prev {
+            background-color: #111111;
+        }
+
+        #nprogress .bar {
+            background-color: #000000;
+        }
+
+        #menu_section.at_top {
+            border-right: 1px solid #000000;
+        }
+
+        #single_slider .spinner-icon,
+        .shortcode_slider.super_height .spinner-icon,
+        .project_ajax_loader .spinner-icon,
+        #nprogress .spinner-icon {
+            border-top-color: #000000;
+            border-left-color: #000000;
+        }
+
+        #pages_static_nav .spinner-icon {
+            border-top-color: #000000;
+            border-left-color: #000000;
+        }
+
+        .prk_blockquote.colored_background .in_quote:after {
+            border-color: #FFFFFF rgba(255, 255, 255, 0.35) #FFFFFF rgba(255, 255, 255, 0.35);
+        }
+
+        #author_area.prk_blockquote.colored_background .in_quote:after {
+            border-color: #FFFFFF rgba(102, 102, 102, 0.15) #FFFFFF rgba(102, 102, 102, 0.15);
+        }
+
+        #astro_menu.under_logo .sf-menu li a {
+            color: #000000 !important;
+        }
+
+        #footer_in input::-webkit-input-placeholder {
+            color: #8F8F8F;
+        }
+
+        #footer_in input:-moz-placeholder {
+            /* Firefox 18- */
+            color: #8F8F8F;
+        }
+
+        #footer_in input::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #8F8F8F;
+        }
+
+        #footer_in input:-ms-input-placeholder {
+            color: #8F8F8F;
+        }
+
+        .commentlist li .comment-author img {
+            border: 4px solid #FFFFFF;
+        }
+
+        .sub-menu .prk_inner_tip,
+        .sub-menu .tip_top_hide,
+        .sf-menu li li,
+        #st-container,
+        #menu_section {
+            background-color: #FFFFFF;
+        }
+
+        #outerSliderWrapper,
+        #pages_static_nav a,
+        #left_bar_wrapper,
+        #prk_responsive_menu,
+        #astro_menu {
+            background-color: #000000;
+        }
+
+        .tooltipster-light {
+            color: #ffffff;
+            background-color: #000000;
+            background-color: rgba(0, 0, 0, 1);
+        }
+
+        .left_bar_colored,
+        #prj_naver,
+        #prj_ttl,
+        #copy {
+            color: #FFFFFF;
+        }
+
+        #nav-collapsed-icon .prk_menu_block {
+            background-color: #FFFFFF;
+        }
+
+        .as-panel .grid_single_title .inner_skills,
+        .as-panel .grid_single_title a {
+            color: #ffffff;
+        }
+
+        .accordion-slider .as-layer.as-black,
+        .as-panel .titled_block {
+            background-color: #000000;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .accordion-slider .as-pagination-button {
+            border: 2px solid #000000;
+        }
+
+        .accordion-slider .as-pagination-buttons .as-selected {
+            background-color: #000000;
+        }
+
+        .theme_button_inverted button,
+        .theme_button button:hover,
+        .theme_button_inverted a {
+            background-color: #111111;
+        }
+
+        #blog_entries .blog_date,
+        .prk_price_table.featured .prk_price_header,
+        #prk_gallery_control_right,
+        #prk_gallery_control_left,
+        .classic_meta .post-categories li a,
+        .prk_sharrre_father,
+        .prk_sharrre_button,
+        #in_no_more {
+            background-color: #000000;
+        }
+
+        .blog_fader_grid {
+            background-color: #000000;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .vc_tta-accordion .vc_tta-panel-heading,
+        #astro_menu .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+        .bx-controls-direction a,
+        .prk_button_like,
+        .theme_tags li.active,
+        .blog_icon,
+        .inner_line_block,
+        .inner_line_single_block,
+        .home_fader_grid,
+        .theme_button input,
+        .theme_button a,
+        .theme_button button,
+        .sidebar_bubble,
+        .big_icon,
+        .single_special_line,
+        #right_rect,
+        #left_rect,
+        .special_line,
+        .member_function,
+        .prk_blockquote.colored_background,
+        #tp_side_plus,
+        .blog_squared_icon,
+        .prk_blockquote.colored_background,
+        .tiny_line,
+        .back_activated_color,
+        .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_header,
+        .active_bar {
+            background-color: #e74c3c;
+        }
+
+        .vc_tta-accordion .vc_tta-panel-body,
+        .vc_tta-container .vc_tta-panel,
+        .vc_tta-container .vc_tta-tabs-list li,
+        .prk_speech,
+        .small_squared,
+        .inactive_bar,
+        .cart-collaterals table,
+        .shop_table,
+        .woocommerce #payment,
+        .woocommerce-error,
+        .prk_price_header,
+        .liner,
+        .es-nav span,
+        .btn-primary,
+        #magic-line,
+        #entries_navigation_blog a,
+        .prk_minimal_button a,
+        .prk_minimal_button input,
+        #submit_comment_div a,
+        #submit_message_div a,
+        .tagcloud a,
+        .pirenko_highlighted,
+        #nav-main.resp_mode,
+        .timeline_tip_top_hide,
+        .prk_timeline_tip,
+        .tip_top_hide,
+        .prk_inner_tip,
+        .prk_blockquote,
+        #author_area.prk_blockquote.colored_background,
+        .colored_bg {
+            background-color: #f5f5f5;
+        }
+
+        .inner_line_sidebar_block {
+            background-color: rgba(231, 76, 60, 0.5);
+        }
+
+        .sf-menu .sub-menu {
+            border-top: 0px solid #000000;
+        }
+
+        #astro_menu.under_logo .sf-menu>li>a {
+            border-bottom: 0px solid;
+        }
+
+        #menu_section.opened-sub {
+            background-color: #efefef;
+        }
+
+        .naver_back,
+        #menu_section.under_logo li,
+        .sf-menu .sub-menu>li:first-child,
+        .sf-menu>li:first-child {
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .sf-menu li li,
+        .sf-menu>li {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .sub-menu .prk_inner_tip,
+        .sf-menu .sub-menu,
+        .st-pusher {
+            width: 220px;
+        }
+
+        .sf-menu .sub-menu {
+            margin-left: -220px;
+        }
+
+        .astro_nav_right .sf-menu .sub-menu {
+            margin-left: 220px;
+        }
+
+        .prk_close_submenu {
+            color: #000000;
+            background-color: #f0f0f0;
+        }
+
+        #portfolio_info {
+            border-left: 1px solid #666666;
+            border-left: 1px solid rgba(102, 102, 102, 0.25);
+        }
+
+        .vc_tta-tabs.vc_tta-tabs-position-top .vc_tta-panels {
+            border-top: 1px solid #e74c3c;
+        }
+
+        .wpb_tour .wpb_tour_tabs_wrapper .wpb_tab {
+            border-left: 1px solid #FFFFFF;
+        }
+
+        .blog_lower,
+        .wpb_separator,
+        .vc_text_separator,
+        .post_meta_single,
+        .simple_line,
+        .simple_line_onbg,
+        .low_subheading,
+        .timeline_entry_marker,
+        .simple_line.special_size,
+        .simple_line.header_divider {
+            border-bottom: 1px solid #dedede;
+        }
+
+        .simple_line.blog_divider {
+            border-bottom: 6px solid #dedede;
+        }
+
+        .simple_line.thick {
+            border-bottom: 3px solid #dedede;
+        }
+
+        .simple_line.thicker {
+            border-bottom: 5px solid #dedede;
+        }
+
+        .commentlist li .comment-author img {
+            outline: 1px solid #dedede;
+        }
+
+        .prk_prices_specs li,
+        .underp,
+        .prk_prices_specs {
+            border-bottom: 1px solid #dedede;
+            border-bottom: 1px solid rgba(222, 222, 222, 0.65);
+        }
+
+        .prk_prices_specs {
+            border-top: 1px solid #dedede;
+            border-top: 1px solid rgba(222, 222, 222, 0.65);
+        }
+
+        .triangle-topleft {
+            border-top: 50px solid #e74c3c;
+        }
+
+        .prk_price_header,
+        .post_meta_single,
+        #respond .low_subheading,
+        .timeline_entry_marker,
+        #prk_gallery_footer {
+            border-top: 1px solid #dedede;
+        }
+
+        .wpb_row .wpb_column:last-child .wpb_wrapper .prk_price_table .prk_prices_specs,
+        .wpb_row .wpb_column:last-child .wpb_wrapper .prk_price_table .prk_price_header,
+        #prk_gallery_counter {
+            border-right: 1px solid #dedede;
+        }
+
+        .timeline_line_inner,
+        .comments_liner,
+        .prk_prices_specs,
+        .prk_price_header,
+        #prk_gallery_project_nav,
+        #prk_gallery_share {
+            border-left: 1px solid #dedede;
+        }
+
+        #entries_navigation_blog a,
+        .prk_minimal_button a,
+        .prk_minimal_button input,
+        #submit_comment_div a,
+        #submit_message_div a,
+        .tagcloud a,
+        .pirenko_highlighted,
+        .pk_contact_highlighted,
+        .shop_table,
+        .comment_floated:after,
+        .prk_bordered {
+            border: 1px solid #e8e8e8;
+        }
+
+        .simple_line_colored {
+            border-bottom: 1px solid rgba(231, 76, 60, 0.8);
+        }
+
+        .portfolio_entry_li_db {
+            background-color: rgba(245, 245, 245, 0.05);
+        }
+
+        .read_more_text {
+            background-color: #666666;
+        }
+
+        input,
+        textarea,
+        select,
+        .uneditable-input {
+            border: 1px solid #666666;
+        }
+
+        .page-header {
+            border-bottom: 1px solid #666666;
+            border-bottom: 1px solid rgba(102, 102, 102, 0.20);
+        }
+
+        .vc_tta-container .vc_tta-tabs-list li.vc_active,
+        .vc_tta-container .vc_tta-tabs-list li:hover {
+            background-color: #e74c3c;
+        }
+
+        .wpb_column.column_container,
+        ul.wpb_thumbnails-fluid>li,
+        .last_toggle_el_margin,
+        .wpb_button {
+            margin-bottom: 40px;
+        }
+
+        .sf-menu {
+            font-size: 14px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .prk_price_table .prk_prices_specs,
+            .prk_price_table .prk_price_header {
+                border-right: 1px solid #dedede;
+            }
+        }
+
+        .boxed_shadow {
+            -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .woocommerce .boxed_shadow {
+            -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2) !important;
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2) !important;
+        }
+
+        .astro_sgl_wrapper {
+            display: none;
+        }
+    </style>
+    <link rel='stylesheet' id='pirenko_responsive_style-css' href='css/responsive.css?ver=4.6' type='text/css' media='all' />
+    <link rel='stylesheet' id='prk_header_font-css' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&#038;subset=latin,latin-ext&#038;ver=4.7.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='prk_body_font-css' href='http://fonts.googleapis.com/css?family=Roboto:300,400,700,400italic,700italic&#038;subset=latin,latin-ext&#038;ver=4.7.4' type='text/css' media='all' />
+    <script type='text/javascript' src='js/jquery.js?ver=1.12.4'></script>
+    <script type='text/javascript' src='js/jquery-migrate.min.js?ver=1.4.1'></script>
+    <style type="text/css">
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="../css/vc_lte_ie9.min.css" media="screen"><![endif]-->
+    <style type="text/css" media="print">
+        #wpadminbar {
+            display: none;
+        }
+    </style>
+    <noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="">
+    <div class="prk_meta">
+        <div class="prk_page_ttl">Wordpress Sample | Just another WordPress site</div>
+        <div id="prk_body_classes" class="home page-template page-template-template_portfolio_carousel page-template-template_portfolio_carousel-php page page-id-13 logged-in admin-bar no-customize-support astro_theme astro_nav_left  wpb-js-composer js-comp-ver-5.0.1 vc_responsive"></div>
+    </div>
+    <div id="dump"></div>
+    <div id="prk_pint" data-media="" data-desc=""></div>
+    <div id="prk_mega_wrap" class="ultra_wrapper">
+        <div id="wrap" class="container columns extra_pad boxed_lay centered" role="document">
+            <div id="prk_responsive_menu">
+                <div id="prk_menu_els">
+                    <div id="nav-collapsed-icon">
+                        <div class="prk_menu_block prk_bl1"></div>
+                        <div class="prk_menu_block prk_bl2"></div>
+                        <div class="prk_menu_block prk_bl3"></div>
+                        <div class="prk_menu_block prk_bl4"></div>
+                    </div>
+                    <a href="#" class="fade_anchor">
+                        <div id="responsive_logo_holder">
+                            <img src="images/logo.png" alt="" width="91" height="66" class="prk_small_logo_image" /> </div>
+                    </a>
+                    <a href="#" class="fade_anchor_menu">
+                        <div id="alt_logo_holder">
+                            <img src="images/logo.png" alt="" width="91" height="66" class="prk_logo_image" /> </div>
+                    </a>
+                    <div id="copy">
+                        <div id="back_to_top-collapsed">
+                            <div class="navicon-arrow-up-2"></div>
+                        </div>
+                        <div id="prk_fullscreen_wrapper" class="hide_later">
+                            <div class="navicon-expand-2"></div>
+                            <div class="navicon-contract-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="body_hider" class="hider_flag"></div>
+            <div id="st-container" class="no-csstransforms3d" data-width="220">
+                <div class="st-pusher">
+                    <div id="menu_section" data-close="BACK">
+                        <div class="opened_menu twelve">
+                            <nav id="nav-main" class="nav-collapse collapse" role="navigation">
+                                <div class="nav-wrap">
+                                    <ul class="sf-menu sf-vertical">
+                                        <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom active active menu-item-home"><a title="description" href="#">Home</a></li>
+                                        <li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom active active menu-item-home"><a title="description" href="#">Home</a></li>
+                                        <li id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a title="description" href="#">Pages</a>
+                                            <ul class="sub-menu">
+                                                <li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#">Grid Portfolio</a></li>
+                                                <li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#">Fullscreen Slider</a></li>
+                                                <li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#">Classic Blog</a></li>
+                                                <li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#">Masonry Blog</a></li>
+                                                <li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#">Contact Page</a></li>
+                                                <li id="menu-item-42" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#">About Us</a></li>
+                                                <li id="menu-item-44" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#">About Me</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="height_helper"></div>
+                        <div id="astro_footer" class="footer">
+                            <footer id="content-info" role="contentinfo">
+                                <div id="footer_bk">
+                                    <div id="footer_in">
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="left_bar_wrapper" class="" data-offset_tip="30">
+                <div class="fifty_button left_floated">
+                    <div id="astro_close" class="left_bar_colored">
+                        <div class="navicon-arrow-up-left"></div>
+                    </div>
+                </div>
+                <div id="astro_left_wrp" class="fifty_button left_floated fade_anchor">
+                    <div id="astro_left" class="left_floated left_bar_colored">
+                        <div class="mover">
+                            <div id="prk_left_1" class="left_floated navicon-backward-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="astro_right_wrp" class="fifty_button left_floated fade_anchor">
+                    <div id="astro_right" class="left_floated left_bar_colored">
+                        <div class="mover">
+                            <div id="prk_right_1" class="left_floated navicon-forward-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fifty_button left_floated">
+                    <div id="prj_naver_info" class="left_bar_colored" data-pir_title="Project Info" data-pir_close="Close">
+                        <div class="navicon-info-2"></div>
+                    </div>
+                </div>
+                <div id="prj_ttl" class="header_font prk_uppercased">
+                </div>
+                <div id="prk_lower_nav" data-pir_title="of">
+                    <div id="prj_naver_wrap">
+                        <div class="fifty_button left_floated fade_anchor">
+                            <div id="prj_naver_right" class="left_floated left_bar_colored" data-pir_title="Next">
+                                <div class="left_floated navicon-forward-2"></div>
+                            </div>
+                        </div>
+                        <div id="prj_naver_left_wp" class="fifty_button left_floated fade_anchor">
+                            <div id="prj_naver_left" class="left_floated left_bar_colored" data-pir_title="Previous">
+                                <div class="left_floated navicon-backward-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="prj_naver">
+                    </div>
+                </div>
+            </div>
+            <div id="prk_ajax_container" data-ajax_path="" data-retina="prk_not_retina">
+            <!-- <div id="prk_ajax_container" data-ajax_path="http://localhost/wordpress/wp-content/themes/astro/inc/ajax-handler.php" data-retina="prk_not_retina"> -->
+                <div id="centered_block">
+                    <div id="main_block" class="row fff_folio page-13">
+                        <div id="content">
+                            <div id="main" class="main_no_sections">
+                                <div class="row prk_row">
+                                    <div id="folio_father" class="columns twelve has_carousel">
+                                        <div id="folio_carousel" class="accordion-slider prk_no_titles" data-columns="5" data-position="">
+                                            <div class="as-panels">
+                                                <div id="prk_panel-0" class="as-panel" data-id="id-0" data-color="#27ae60">
+                                                    <div class="prk-panel">
+                                                        <a href="#" class="prk_panel_lnk fade_anchor" data-mfp-src="images/dance.jpg">
+                                                            <img class="as-background" src="images/massage.jpg" alt="" />
+                                                        </a>
+                                                        <div class="header_font as-layer as-closed as-prk-rotated" data-position="bottomLeft" data-horizontal="20px" data-vertical="20px" data-show-transition="left" data-show-delay="300" data-hide-transition="right">
+                                                            <h2 class="as-layer as-padding as-black small">Fullscreen with Image</h2>
+                                                        </div>
+                                                        <div class="as-layer as-opened as-prk-bottom" data-width="96%" data-horizontal="2%" data-show-delay="700" data-vertical="100%">
+                                                            <div class="titled_block">
+                                                                <div class="grid_single_title" id="grid_title-16">
+                                                                    <a href="#" class="fade_anchor" data-ajax_id="16" data-ajax_order="0" data-color="#27ae60" data-mfp-src="images/massage.jpg">
+                                                                        <h1 class="header_font">Fullscreen with Image</h1>
+                                                                    </a>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="inner_skills fade_anchor">
+                                                                        <h5 class="small">
+                                                                            <a href="#" rel="tag">Astro Fullscreen Skill</a> </h5>
+                                                                    </div>
+                                                                    <div class="prk_heart_carousel site_background_colored">
+                                                                        <div class="post-like left_floated">
+                                                                            <div title="I like this!" data-no_more="You already liked this." class="pir_like" data-color="#ff3030" data-post_id="16">
+                                                                                <div class="like_count left_floated">0 likes</div>
+                                                                                <div class="navicon-heart-2 left_floated"></div>
+                                                                            </div>
+                                                                            <div class="clearfix"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="prk_panel-1" class="as-panel" data-id="id-1" data-color="#e67e22">
+                                                    <div class="prk-panel">
+                                                        <a href="#" class="prk_panel_lnk fade_anchor" data-mfp-src="images/dance.jpg">
+                                                            <img class="as-background" src="images/dance.jpg" alt="" />
+                                                        </a>
+                                                        <div class="header_font as-layer as-closed as-prk-rotated" data-position="bottomLeft" data-horizontal="20px" data-vertical="20px" data-show-transition="left" data-show-delay="300" data-hide-transition="right">
+                                                            <h2 class="as-layer as-padding as-black small">Fullscreen with Slider</h2>
+                                                        </div>
+                                                        <div class="as-layer as-opened as-prk-bottom" data-width="96%" data-horizontal="2%" data-show-delay="700" data-vertical="100%">
+                                                            <div class="titled_block">
+                                                                <div class="grid_single_title" id="grid_title-17">
+                                                                    <a href="#" class="fade_anchor" data-ajax_id="17" data-ajax_order="1" data-color="#e67e22" data-mfp-src="images/dance.jpg">
+                                                                        <h1 class="header_font">Fullscreen with Slider</h1>
+                                                                    </a>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="inner_skills fade_anchor">
+                                                                        <h5 class="small">
+                                                                            <a href="#" rel="tag">Astro Fullscreen Skill</a> </h5>
+                                                                    </div>
+                                                                    <div class="prk_heart_carousel site_background_colored">
+                                                                        <div class="post-like left_floated">
+                                                                            <div title="I like this!" data-no_more="You already liked this." class="pir_like" data-color="#ff3030" data-post_id="17">
+                                                                                <div class="like_count left_floated">0 likes</div>
+                                                                                <div class="navicon-heart-2 left_floated"></div>
+                                                                            </div>
+                                                                            <div class="clearfix"></div>
+                                                                        </div>
+                                                                    </div><a href="#" data-mfp-src="images/dance.jpg" class="magna_b magna_a"></a>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="prk_panel-2" class="as-panel" data-id="id-2" data-color="#8e44ad">
+                                                    <div class="prk-panel">
+                                                        <a href="#" class="prk_panel_lnk fade_anchor mfp-iframe" data-mfp-src="http://www.youtube.com/watch?v=">
+                                                            <img class="as-background" src="images/coding.jpg" alt="" />
+                                                        </a>
+                                                        <div class="header_font as-layer as-closed as-prk-rotated" data-position="bottomLeft" data-horizontal="20px" data-vertical="20px" data-show-transition="left" data-show-delay="300" data-hide-transition="right">
+                                                            <h2 class="as-layer as-padding as-black small">Fullscreen with Video</h2>
+                                                        </div>
+                                                        <div class="as-layer as-opened as-prk-bottom" data-width="96%" data-horizontal="2%" data-show-delay="700" data-vertical="100%">
+                                                            <div class="titled_block">
+                                                                <div class="grid_single_title" id="grid_title-18">
+                                                                    <a href="#" class="fade_anchor" data-ajax_id="18" data-ajax_order="2" data-color="#8e44ad" data-mfp-src="images/coding.jpg">
+                                                                        <h1 class="header_font">Fullscreen with Video</h1>
+                                                                    </a>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="inner_skills fade_anchor">
+                                                                        <h5 class="small">
+                                                                            <a href="#" rel="tag">Astro Fullscreen Skill</a> </h5>
+                                                                    </div>
+                                                                    <div class="prk_heart_carousel site_background_colored">
+                                                                        <div class="post-like left_floated">
+                                                                            <div title="I like this!" data-no_more="You already liked this." class="pir_like" data-color="#ff3030" data-post_id="18">
+                                                                                <div class="like_count left_floated">0 likes</div>
+                                                                                <div class="navicon-heart-2 left_floated"></div>
+                                                                            </div>
+                                                                            <div class="clearfix"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- new add -->
+                                                <div id="prk_panel-3" class="as-panel" data-id="id-3" data-color="#27ae60">
+                                                    <div class="prk-panel">
+                                                        <a href="#" class="prk_panel_lnk fade_anchor" data-mfp-src="images/photography.jpg">
+                                                            <img class="as-background" src="images/photography.jpg" alt="" />
+                                                        </a>
+                                                        <div class="header_font as-layer as-closed as-prk-rotated" data-position="bottomLeft" data-horizontal="20px" data-vertical="20px" data-show-transition="left" data-show-delay="300" data-hide-transition="right">
+                                                            <h2 class="as-layer as-padding as-black small">Fullscreen with Image</h2>
+                                                        </div>
+                                                        <div class="as-layer as-opened as-prk-bottom" data-width="96%" data-horizontal="2%" data-show-delay="700" data-vertical="100%">
+                                                            <div class="titled_block">
+                                                                <div class="grid_single_title" id="grid_title-16">
+                                                                    <a href="#" class="fade_anchor" data-ajax_id="16" data-ajax_order="0" data-color="#27ae60" data-mfp-src="images/photography.jpg">
+                                                                        <h1 class="header_font">Fullscreen with Image</h1>
+                                                                    </a>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="inner_skills fade_anchor">
+                                                                        <h5 class="small">
+                                                                            <a href="#" rel="tag">Astro Fullscreen Skill</a> </h5>
+                                                                    </div>
+                                                                    <div class="prk_heart_carousel site_background_colored">
+                                                                        <div class="post-like left_floated">
+                                                                            <div title="I like this!" data-no_more="You already liked this." class="pir_like" data-color="#ff3030" data-post_id="16">
+                                                                                <div class="like_count left_floated">0 likes</div>
+                                                                                <div class="navicon-heart-2 left_floated"></div>
+                                                                            </div>
+                                                                            <div class="clearfix"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="prk_panel-4" class="as-panel" data-id="id-4" data-color="#e67e22">
+                                                    <div class="prk-panel">
+                                                        <a href="#" class="prk_panel_lnk fade_anchor" data-mfp-src="images/boxing.jpg">
+                                                            <img class="as-background" src="images/boxing.jpg" alt="" />
+                                                        </a>
+                                                        <div class="header_font as-layer as-closed as-prk-rotated" data-position="bottomLeft" data-horizontal="20px" data-vertical="20px" data-show-transition="left" data-show-delay="300" data-hide-transition="right">
+                                                            <h2 class="as-layer as-padding as-black small">Fullscreen with Slider</h2>
+                                                        </div>
+                                                        <div class="as-layer as-opened as-prk-bottom" data-width="96%" data-horizontal="2%" data-show-delay="700" data-vertical="100%">
+                                                            <div class="titled_block">
+                                                                <div class="grid_single_title" id="grid_title-17">
+                                                                    <a href="#" class="fade_anchor" data-ajax_id="17" data-ajax_order="1" data-color="#e67e22" data-mfp-src="images/boxing.jpg">
+                                                                        <h1 class="header_font">Fullscreen with Slider</h1>
+                                                                    </a>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="inner_skills fade_anchor">
+                                                                        <h5 class="small">
+                                                                            <a href="#" rel="tag">Astro Fullscreen Skill</a> </h5>
+                                                                    </div>
+                                                                    <div class="prk_heart_carousel site_background_colored">
+                                                                        <div class="post-like left_floated">
+                                                                            <div title="I like this!" data-no_more="You already liked this." class="pir_like" data-color="#ff3030" data-post_id="17">
+                                                                                <div class="like_count left_floated">0 likes</div>
+                                                                                <div class="navicon-heart-2 left_floated"></div>
+                                                                            </div>
+                                                                            <div class="clearfix"></div>
+                                                                        </div>
+                                                                    </div><a href="#" data-mfp-src="images/boxing.jpg" class="magna_b magna_a"></a>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                <!-- </div> -->
+                                                
+                                                <!-- new add end -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <script type="text/javascript">
+        var make_session = false;
+        var retina_device = 'prk_not_retina';
+        var detect_retina = '1';
+        jQuery(function() {
+            if (window.devicePixelRatio && detect_retina === '1') {
+                if (window.devicePixelRatio > 1 && retina_device !== "prk_retina") {
+                    jQuery.cookie("astro_retina", "prk_retina", {
+                        path: '/'
+                    });
+                }
+            }
+        });
+    </script>
+    <script type='text/javascript' src='js/js_composer_front-min.js?ver=5.0.1'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */        
+        var theme_options = {
+            "ajax_calls": "1",
+            "custom_opacity": "0.8",
+            "custom_opacity_folio": "0.8",
+            "portfolio_link": "",
+            "blog_link": "",
+            "home_link": "",
+            "home_slug": "",
+            "active_color": "#e74c3c",
+            "inputs_bordercolor": "#e8e8e8",
+            "lines_color": "#dedede",
+            "inactive_color": "#666666",
+            "menu_up_color": "#000000",
+            "color_header": "#",
+            "menu_active_bk_color": "#efefef",
+            "background_color_menu": "#FFFFFF",
+            "background_color_btns": "#000000",
+            "background_color_btns_blog": "#000000",
+            "menu_active_color": "#6d6d6d",
+            "logo_bar_width": "104",
+            "site_background_color": "#FFFFFF",
+            "carousel_background_opacity": "0.9",
+            "background_color": "#f5f5f5",
+            "bd_headings_color": "#000000",
+            "titles_color_footer": "#111111",
+            "resp_mode": "1",
+            "theme_buttons_color": "#111111",
+            "buttons_color": "#111111",
+            "woo_color": "",
+            "woo_link_for_cart": "",
+            "woo_link": "",
+            "likes_text": "likes",
+            "folio_arrows": "0",
+            "active_woocommerce": "false",
+            "active_visual_composer": "1"
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='js/main-min.js?ver=4.6'></script>
+    <script type='text/javascript' src='js/other-min.js?ver=4.6'></script>
+    <!--[if lte IE 8]>
+        <script type="text/javascript">
+            document.body.className = document.body.className.replace( /(^|\s)(no-)?customize-support(?=\s|$)/, '' ) + ' no-customize-support';
+        </script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <script type="text/javascript">
+        (function() {
+            var request, b = document.body,
+                c = 'className',
+                cs = 'customize-support',
+                rcs = new RegExp('(^|\\s+)(no-)?' + cs + '(\\s+|$)');
+
+            request = true;
+
+            b[c] = b[c].replace(rcs, ' ');
+            // The customizer requires postMessage and CORS (if the site is cross domain)
+            b[c] += (window.postMessage && request ? ' ' : ' no-') + cs;
+        }());
+    </script>
+    <!--<![endif]-->
+
+</body>
+
+</html>
