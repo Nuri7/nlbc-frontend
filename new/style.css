@@ -173,6 +173,7 @@ body {
   margin-left: 3%;
   bottom: 15px;
   background-color: rgba(255, 255, 255, 0.3);
+  bottom: 6%;
 }
 .category{
 	font-size: 14px;
@@ -188,7 +189,7 @@ h2{
   position: absolute;
   background: rgb(0,0,0,0.3);
   left: 0px;
-  bottom: 40px;
+  bottom: 90px;
   position: absolute;
   width: auto !important;
   padding: 5px 15px;
@@ -198,4 +199,8 @@ h2{
 }
 .videodiv:hover .slantedcaption{
 	display: none
+}
+.videodiv a{
+  text-decoration: none;
+  color: #333;
 }
