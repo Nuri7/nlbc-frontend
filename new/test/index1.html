@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NLBC</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet"> 
+<script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $(".videodiv").hover(function () {
+        $(this).children("video")[0].play();
+    }, function () {
+        var el = $(this).children("video")[0];
+        el.pause();
+        el.currentTime = 0;
+    }); 
+	});
+</script>
+</head>
+<body>
+  <a href="#" style="position: absolute; z-index: 99; left: 20px; top: 30px;">
+    <img src="logo.png" alt="Logo" />
+  </a>
+  <div class="accordion">
+    <ul>
+      <li class="videodiv">
+  	  	<video preload="yes" loop>
+  		    <source src="12950321.mp4" type="video/mp4"/>
+    		</video>
+    		<div class="slantedcaption">Boxing</div>
+    		<div class="caption">
+    			<h2>Boxing</h2>
+    			<div class="category">Passion</div>
+    		</div>
+      </li>
+      <li class="videodiv">
+  	  	<video preload="yes" loop>
+  		    <source src="14019065.mp4" type="video/mp4"/>
+  		</video>
+  		<div class="slantedcaption">Coding</div>
+  		<div class="caption">
+  			<h2>Coding</h2>
+  			<div class="category">Passion</div>
+  		</div>
+      </li>
+      <li class="videodiv">
+  	  	<video preload="yes" loop>
+  		    <source src="16053757.mp4" type="video/mp4"/>
+  		</video>
+  		<div class="slantedcaption">Dancing</div>
+  		<div class="caption">
+  			<h2>Dancing</h2>
+  			<div class="category">Passion</div>
+  		</div>
+      </li>
+      <li class="videodiv">
+  	  	<video preload="yes" loop>
+  		    <source src="22148674.mp4" type="video/mp4"/>
+  		</video>
+  		<div class="slantedcaption">Massage</div>
+  		<div class="caption">
+  			<h2>Massage</h2>
+  			<div class="category">Passion</div>
+  		</div>
+      </li>
+   	  <li>
+    		<div>
+          <a href="#">
+            <h2>Photography</h2>
+            <p>Passion</p>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+<script>
+  $(".openNav").click(function() {
+    $("body").toggleClass("navOpen");
+    $("nav").toggleClass("open");
+    $(".wrapper").toggleClass("open");
+    $(this).toggleClass("open");
+  });
+</script>
+</body>
+</html>

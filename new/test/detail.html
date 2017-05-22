@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NLBC</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="//fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700" rel="stylesheet"> <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $(".videodiv").hover(function () {
+        $(this).children("video")[0].play();
+    }, function () {
+        var el = $(this).children("video")[0];
+        el.pause();
+        el.currentTime = 0;
+    });
+  });
+</script>
+<style>
+
+</style>
+</head>
+<body style="background: url('boxing.jpg') center top no-repeat; background-size: cover;">
+  <a href="#" style="position: absolute; z-index: 99; left: 20px; top: 30px;">
+    <img src="logo.png" alt="Logo" />
+  </a>
+  <div style="width: 20%; position: absolute; right: 8% !important; padding-top: 5%;">
+        <div style="color:#fff; background-color: rgba(0, 0, 0, 0.5); font-size: 16px; font-weight: 300; right: 10px; z-index: 9; width: 100%; border-radius:5px; padding: 20px;">
+            <strong style="font-size:16px; margin-bottom: 10px; font-weight: 900;">Boot Camp details</strong>
+            <div style="font-size: 12px; color: #b2b2b2; line-height: 16px; margin-top: 5px; font-family: 'Open Sans', sans-serif;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div><br>
+        <div style="color:#fff; background-color: rgba(0, 0, 0, 0.5); font-size: 16px; font-weight: 300; right: 10px; z-index: 9; width: 100%; border-radius:5px; padding: 20px;">
+            <div>
+                <table style="width: 100%;">
+                    <tbody><tr>
+                        <td style="font-size: 16px;">Agenda</td>
+                        <td style="width: 100%;">
+                            <select style="width: 100%;">
+                                <option>2017 May 20</option>
+                                <option>2017 May 30</option>
+                                <option>2017 June 10</option>
+                                <option>2017 June 20</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 16px;">Location</td>
+                        <td style="width: 100%;">
+                            <select style="width: 100%;">
+                                <option>San Francisco</option>
+                                <option>Paris</option>
+                                <option>Sydney</option>
+                                <option>Kathmandu</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%; position: absolute; padding-top: 5%; height: 100px; bottom: 20px; padding-right: 0%; right: 5%;">
+      <style>
+          .challenges{
+              height: 100px;
+              padding: 0;
+          }
+          .challenges li{
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+            cursor: pointer;
+            float: right;
+            list-style: outside none none;
+            margin: 0 10px 0 0;
+            padding: 40px 5px 20px;
+            width: 9%;
+          }
+          .challenges li span{
+            opacity: 0.8;
+          }
+          .challenges li span:first-child{
+            font-size: 17px;
+            font-family: 'Open Sans', sans-serif;
+          }
+          .challenges li span:last-child{
+            font-size: 25px;
+            font-weight: 700;
+          }
+          .green{
+            color:#63ce8e;
+          }
+          .orange{
+            color:#d89a6c;
+          }
+          .purple{
+              color: #b588d3;
+          }
+          .yellow{
+            color: #e2d588;
+          }
+          .red{
+            color: #e29393;
+          }
+      </style>
+      <div style="bottom: 0px !important; display: block; position: absolute; padding-top: 0%; right: 0%; padding-right: 0%; width: 90%;">
+          <ul class="list-unstyled list-inline challenges">
+              <li class="green">
+                  <span>Challenge 8</span><br />
+                  <span>5k</span>
+              </li>
+              <li class="orange">
+                  <span>Challenge 7</span><br />
+                  <span>10k</span>
+              </li>
+              <li class="purple">
+                  <span>Challenge 6</span><br />
+                  <span>5k</span>
+              </li>
+              <li class="yellow">
+                  <span>Challenge 5</span><br />
+                  <span>10k</span>
+              </li>
+              <li class="red">
+                  <span>Challenge 4</span><br />
+                  <span>5k</span>
+              </li>
+              <li class="green">
+                  <span>Challenge 3</span><br />
+                  <span>10k</span>
+              </li>
+              <li class="orange">
+                  <span>Challenge 2</span><br />
+                  <span>5k</span>
+              </li>
+              <li class="purple">
+                  <span>Challenge 1</span><br />
+                  <span>10k</span>
+              </li>
+              <li class="yellow">
+                  <span>Challenge 0</span><br />
+                  <span>5k</span>
+              </li>
+          </ul>
+      </div>
+  </div>
+</div>
+</body>
+</html>
