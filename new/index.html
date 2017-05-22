@@ -11,18 +11,16 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript">
 	$(function(){
-	    // $('.video').on('mouseenter', function(){
-	    //     if( this.paused) this.play();
-	    // }).on('mouseleave', function(){
-	    //     if( !this.paused) this.pause();
-	    // });
+	    $('.videodiv').on('mouseenter', function(){
+	        if( this.paused) this.play();
+	    }).on('mouseleave', function(){
+	        if( !this.paused) this.pause();
+	    });
 
-      var figure = $(".video").hover( hoverVideo, hideVideo );
-
+      var figure = $(".videodiv").hover( hoverVideo, hideVideo );
       function hoverVideo(e) {  
           $('video', this).get(0).play(); 
       }
-
       function hideVideo(e) {
           $('video', this).get(0).pause(); 
       }
@@ -235,7 +233,7 @@ h2{
 <div class="accordion">
   <ul>
     <li class="videodiv">
-	  	<video preload="yes" loop class="video">
+	  	<video preload="yes" loop>
 		    <source src="12950321.mp4" type="video/mp4"/>
   		</video>
   		<div class="slantedcaption">Boxing</div>
@@ -245,7 +243,7 @@ h2{
   		</div>
     </li>
     <li class="videodiv">
-	  	<video preload="yes" loop class="video">
+	  	<video preload="yes" loop>
 		    <source src="14019065.mp4" type="video/mp4"/>
 		</video>
 		<div class="slantedcaption">Coding</div>
@@ -255,7 +253,7 @@ h2{
 		</div>
     </li>
     <li class="videodiv">
-	  	<video preload="yes" loop class="video">
+	  	<video preload="yes" loop>
 		    <source src="16053757.mp4" type="video/mp4"/>
 		</video>
 		<div class="slantedcaption">Dancing</div>
@@ -265,7 +263,7 @@ h2{
 		</div>
     </li>
     <li class="videodiv">
-	  	<video preload="yes" loop class="video">
+	  	<video preload="yes" loop>
 		    <source src="22148674.mp4" type="video/mp4"/>
 		</video>
 		<div class="slantedcaption">Massage</div>
