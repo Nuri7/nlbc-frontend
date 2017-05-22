@@ -8,7 +8,7 @@
 <title>NLBC</title>
 <link href="//www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
 <link href="//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet"> 
-<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript">
 	$(function(){
 	    // $('.videodiv').on('mouseenter', function(){
@@ -25,15 +25,13 @@
       //     $('video', this).get(0).pause(); 
       // }
 
-      var figure = $(".video").hover( hoverVideo, hideVideo );
-
-      function hoverVideo(e) {  
-          $('video', this).get(0).play(); 
-      }
-
-      function hideVideo(e) {
-          $('video', this).get(0).pause(); 
-      }
+        $(".videodiv").hover(function () {
+            $(this).children("video")[0].play();
+        }, function () {
+            var el = $(this).children("video")[0];
+            el.pause();
+            el.currentTime = 0;
+        });
 	});
 </script>
 <style>
@@ -42,8 +40,8 @@ html {
     height: 100%;
 }
 body {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -76,6 +74,11 @@ body {
   transition: all 0.4s ease 0s;
   box-shadow: -5px 0 40px 1px #000;
   background-size: cover;
+}
+
+.accordion ul li div {
+  overflow: hidden;
+  width: 100%;
 }
 
 .accordion ul li div a {
@@ -228,28 +231,6 @@ h2{
 .videodiv:hover .slantedcaption{
 	display: none
 }
-
-
-
-#videosList, #videosList *{
-  height: 100% !important;
-  width: auto !important;
-  overflow: unset;
-}
-
-.video {
-  background-image: url('http://img.youtube.com/vi/nZcejtAwxz4/maxresdefault.jpg');
-  height: 100%;
-  width: 100%;
-}
-video{
-  width: 100% !important;
-  height: 100% !important;
-}
-/* Hide Play button + controls on iOS */
-video::-webkit-media-controls {
-    display:none !important;
-}
 </style>
 </head>
 
@@ -259,20 +240,7 @@ video::-webkit-media-controls {
 </a>
 <div class="accordion">
   <ul>
-  <li>
-    <div id="videosList">           
-      <div class="video">
-        <video class="thevideo" loop preload="none">
-          <source src="//giant.gfycat.com/VerifiableTerrificHind.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-  </li>
-
-
-
-    <!-- <li class="videodiv">
+    <li class="videodiv">
 	  	<video preload="yes" loop>
 		    <source src="12950321.mp4" type="video/mp4"/>
   		</video>
@@ -281,7 +249,7 @@ video::-webkit-media-controls {
   			<h2>Boxing</h2>
   			<div class="category">Passion</div>
   		</div>
-    </li> -->
+    </li>
     <li class="videodiv">
 	  	<video preload="yes" loop>
 		    <source src="14019065.mp4" type="video/mp4"/>
