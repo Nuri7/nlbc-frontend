@@ -11,11 +11,21 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript">
 	$(function(){
-	    $('.video').on('mouseenter', function(){
-	        if( this.paused) this.play();
-	    }).on('mouseleave', function(){
-	        if( !this.paused) this.pause();
-	    });
+	    // $('.video').on('mouseenter', function(){
+	    //     if( this.paused) this.play();
+	    // }).on('mouseleave', function(){
+	    //     if( !this.paused) this.pause();
+	    // });
+
+      var figure = $(".video").hover( hoverVideo, hideVideo );
+
+      function hoverVideo(e) {  
+          $('video', this).get(0).play(); 
+      }
+
+      function hideVideo(e) {
+          $('video', this).get(0).pause(); 
+      }
 	});
 </script>
 <style>
@@ -272,21 +282,5 @@ h2{
     </li>
   </ul>
 </div>
-
-<div style="width: 10px; height: 10px; overflow: hidden;">
-  <video preload="yes" loop class="video">
-    <source src="https://nuri7.github.io/nlbc-frontend/new/12950321.mp4" type="video/mp4"/>
-  </video>
-  <video preload="yes" loop class="video">
-    <source src="14019065.mp4" type="video/mp4"/>
-  </video>
-  <video preload="yes" loop class="video">
-    <source src="16053757.mp4" type="video/mp4"/>
-  </video>
-  <video preload="yes" loop class="video">
-    <source src="22148674.mp4" type="video/mp4"/>
-  </video>
-</div>
-
 </body>
 </html>
