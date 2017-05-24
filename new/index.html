@@ -10,16 +10,13 @@
 <link href="//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet"> 
 <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript">
-	$(function(){
-    $(".videodiv").hover(function () {
-      $(this).children("video")[0].play();
-    }, 
-    function(){
-      var el = $(this).children("video")[0];
-        el.pause();
-        el.currentTime = 0;
-      });
-	});
+	var figure = $(".videodiv").hover( hoverVideo, hideVideo );
+  function hoverVideo(e) {  
+      $('video', this).get(0).play(); 
+  }
+  function hideVideo(e) {
+      $('video', this).get(0).pause(); 
+  }
 </script>
 </head>
 <body>
