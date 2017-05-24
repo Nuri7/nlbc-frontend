@@ -10,16 +10,13 @@
 <link href="//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet"> 
 <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript">
-	$(function(){
-    $(".videodiv").hover(function () {
-      $(this).children("video")[0].play();
-    }, 
-    function(){
-      var el = $(this).children("video")[0];
-        el.pause();
-        el.currentTime = 0;
-      });
-	});
+  var figure = $(".videodiv").hover( hoverVideo, hideVideo );
+  function hoverVideo(e) {  
+      $('video', this).get(0).play(); 
+  }
+  function hideVideo(e) {
+      $('video', this).get(0).pause(); 
+  }
 </script>
 </head>
 <body>
@@ -45,30 +42,36 @@
 		    <source src="14019065.mp4" type="video/mp4"/>
 		</video>
 		<div class="slantedcaption">Coding</div>
+      <a href="detail.html">
 		<div class="caption">
 			<h2>Coding</h2>
 			<div class="category">Passion</div>
 		</div>
+      </a>
     </li>
     <li class="videodiv">
 	  	<video preload="yes" loop>
 		    <source src="16053757.mp4" type="video/mp4"/>
 		</video>
 		<div class="slantedcaption">Dancing</div>
+      <a href="detail.html">
 		<div class="caption">
 			<h2>Dancing</h2>
 			<div class="category">Passion</div>
 		</div>
+      </a>
     </li>
     <li class="videodiv">
 	  	<video preload="yes" loop>
 		    <source src="22148674.mp4" type="video/mp4"/>
 		</video>
 		<div class="slantedcaption">Massage</div>
+      <a href="detail.html">
 		<div class="caption">
 			<h2>Massage</h2>
 			<div class="category">Passion</div>
 		</div>
+      </a>
     </li>
  	  <li>
   		<div> <a href="#">
@@ -78,5 +81,14 @@
     </li>
   </ul>
 </div>
+<script type="text/javascript">
+  /* play video twice as fast */
+  document.querySelector('video').defaultPlaybackRate = 1.0;
+  document.querySelector('video').play();
+  var videos =document.querySelectorAll('video');
+  for (var i=0;i<videos.length;i++){
+    videos[i].playbackRate = 0.5;
+  }
+</script>
 </body>
 </html>
